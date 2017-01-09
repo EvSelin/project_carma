@@ -39,6 +39,10 @@
     right: 40px;
     font-size: 19px;
     cursor: pointer;
+    @media (max-width: 1060px) {
+      top: 20px;
+      right: 20px;
+    }
     &:before {
       content: '';
       display: block;
