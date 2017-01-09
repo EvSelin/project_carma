@@ -13,6 +13,7 @@
 
 .inner {
   position: relative;
+  overflow: hidden;
   :focus {
     outline: none;
   }
@@ -62,6 +63,10 @@
       height: 100vh;
       width: 75%;
       left: 0;
+      @media (max-width: 1060px) {
+        position: static;
+        width: 100%;
+      }
       img {
         height: 100vh;
         margin: 0 auto;
@@ -92,6 +97,12 @@
       right: 0;
       display: flex;
       align-items: center;
+      @media (max-width: 1060px) {
+        height: auto;
+        width: 100%;
+        padding: 40px 0;
+        flex-direction: column;
+      }
       .content-text {
         width: 375px;
         margin: 0 auto;
@@ -140,6 +151,10 @@
       .share {
         position: fixed;
         bottom: 40px;
+        @media (max-width: 1060px) {
+          position: static;
+          margin: 40px;
+        }
         ul {
           li {
             float: left;
@@ -201,13 +216,16 @@
   }
 
   .logo {
+    font-size: 170px;
     position: absolute;
     top: 40px;
     left: 40px;
     display: block;
     z-index: 99999;
-    .karma-logo-big {
-      font-size: 170px;
+    @media (max-width: 1060px) {
+      font-size: 135px;
+      top: 20px;
+      left: 20px;
     }
   }
 
@@ -215,6 +233,10 @@
     position: absolute;
     bottom: 40px;
     left: 40px;
+    @media (max-width: 1060px) {
+      bottom: 20px;
+      left: 20px;
+    }
     .counter {
       font-family: $Montserrat;
       .current-slide {
@@ -255,6 +277,10 @@
     top: 40px;
     right: 40px;
     z-index: 9999;
+    @media (max-width: 1060px) {
+      top: 20px;
+      right: 20px;
+    }
     ul {
       li {
         font-size: 18px;

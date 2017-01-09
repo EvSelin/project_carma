@@ -103,3 +103,10 @@
     }
   }
 }
+
+.slick-list {
+  @media (max-width: 1060px) {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
