@@ -138,9 +138,8 @@
       }
 
       .share {
-        position: absolute;
+        position: fixed;
         bottom: 40px;
-        left: 0;
         ul {
           li {
             float: left;
