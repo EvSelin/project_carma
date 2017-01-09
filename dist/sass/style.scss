@@ -82,6 +82,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @media (max-width: 1060px) {
+        position: static;
+        width: 100%;
+      }
       img {
         margin: 0 auto;
         max-width: 500px;
